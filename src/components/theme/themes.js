@@ -5,10 +5,10 @@ import redLogo from "./assets/redLogo.png"
 
 export const themes = {
     Gray: {
-        primaryColor: "#d9d9d9",
+        primaryColor: "#black",
         backgroundColor: "#ffffff",
         textColor: "#black",
-        secondaryColor:"#99999",
+        secondaryColor:"#d9d9d9",
         logo: grayLogo
     },
     Blue: {

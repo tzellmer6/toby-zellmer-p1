@@ -1,28 +1,17 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { withTheme } from "@callstack/react-theme-provider";
 
 const Header = ({ theme }) => (
   <Container textColor={theme.textColor} background={theme.backgroundColor}>
     <div>
-      <Logo src={theme.logo} rotate={theme.rotate} />
+      <Logo src={theme.logo} />
     </div>
   </Container>
 );
 
-const rotate360 = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
 const Logo = styled.img`
-  height: 10rem;
-  animation: ${props => (props.rotate ? rotate360 : "none")} 2s linear infinite;
+  height: 10rem
 `;
 
 const Container = styled.div`
