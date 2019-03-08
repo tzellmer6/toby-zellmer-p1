@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ITDEV-164 Project 1
+### Iteration 1 
 
-## Available Scripts
-
-In the project directory, you can run:
+This project was created to showcase the many dependencies and libraries that we have learned in Web Programming 2. 
 
 ### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Documentation
 
-### `npm test`
+This project required proper documentation of development in the form of a Project Description, a Feature List and a technical tasks list to complete these features, and lastly requirements for these features. These features are listed conveinently below. 
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project Description:
 
-### `npm run build`
+Create a project that utilizes the following requirements: React, Styled Components, Rebass, Styled Icons and Theming. The application will either be completed as an update to my Web Programming 1 final project, a Python blog website, or as a basic “create react app” website, simply to showcase the requirements. The websites workflow should be managed in GitHub to show iterations of the project.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+After attempting to update my Web Programming 1 final, and getting rebass and theming to work, I struck issues with Styled Components and a “React.createComponent” function that would not let me implement Styled Components. Looking into my npm-cache, I followed a rabbit hole of deleting certain components in node_modules, followed by compiling again, and getting more errors, and soon discovered I spent more time attempting to finish this issue that I did with implementing the first couple of components. To complete the Project, I decided on creating a fairly basic “create react app” to finish the project in a timely manner, and also because I eventually figured my old project would continue not working. 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+I struggled with developing a scope for this application. With a time constraint, I wanted to complete something interesting, but also fairly concise. I was searching around to get ideas for a cool website theme, but stumbled across a concept of creating a website that has a static option key that lets you choose the theme to the page. I found some websites that had implemented this, but were far too complex to replicate and consolidate into a more basic website. I ended up choosing to use this idea, but wanted to theme the website with logos, so I chose Visa, Microsoft and Youtube (blue, gray and red). 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project Features:
 
-### `npm run eject`
+The project will feature all requirements as stated above. These features will be basic features in the “create-react-app” shell, due to my issues with the previous project, and a time constraint. These features will be in their own “components” folder within the project file, which will be called into the main App.js page. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The first feature required was React, which I met by choosing a create-react-app design. In hindsight, due to the nature of this project, I probably would have been better off using the Gatsby framework to create a Gatsby site. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The second feature that was required was Rebass. I integrated Rebass components such as Box, Flex and Link, to divide up the “choose theme” and Styled Icons static icon section, and included information regarding the components I was showcasing, the purpose of the website, and included my LinkedIn as a link to my “creator” section.  The boxes capture what color the themes utilized, and implemented them to their respective section, highlighting the color of the logo that they represent. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The next feature is Styled Icons. I initially wanted to import some icons from https://styled-icons.js.org/ into a styledicons.js file, which then exports them after adding styling, but found out that the icons get imported and utilize a color that I have implemented into Rebass components, which made the process much easier, simplifying into just importing them into the main file, and then utilizing them inside the Rebass boxes. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The last required feature was Theming. I found a specific set of utilities that helped me accomplish my goals, called react-theme-provider that was offered by Callstack. I utilized this dependency in my ThemeChanger.js and Header.js files, and ThemeProvider in my main App.js class. This set of utilities allowed me to implement the option to choose and change the theme of the website, in real time, which I found that other resources didn’t offer, and made the user manually refresh the webpage. 
 
-## Learn More
+### Conclusion:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Overall, I enjoyed creating this project. I initially shouldn’t have tried to get my Web Programming 1 final to work and build off of that, since I spent a few days just trying to do that. If I wouldn’t have done that, I probably could have created a much more user intuitive site that is visually appealing. I am really happy that I got the “choose a theme” option to work, as I tried many different iterations of it, to no avail. I learned some great things in this project, such as some cool tricks with Rebass and Styled Icons. 
