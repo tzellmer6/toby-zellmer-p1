@@ -13,14 +13,14 @@ export const themes = {
     },
     Blue: {
         primaryColor: "#0066ff",
-        backgroundColor: "#4d94ff",
+        backgroundColor: "#FFFFFF",
         textColor: "#ffffff",
         secondaryColor:"#001f4d",
         logo: blueLogo
     },
     Red: {
         primaryColor: "#ffe6e6",
-        backgroundColor: "#000000",
+        backgroundColor: "#FFFFFF",
         textColor: "#ff0000",
         secondaryColor:"#800000",
         logo: redLogo
